@@ -13,15 +13,10 @@ The skill itself is written in Dutch. See [`SKILL.md`](SKILL.md) for the full be
 | Step | Rule |
 |---|---|
 | Fetch | Unread mail from the last 24 hours (`is:unread newer_than:1d -in:sent`) |
-| Filter out | Newsletters, ads, social media notifications, order confirmations, parcel and mail delivery, expired verification codes |
-| Keep | Security alerts, bills and invoices, messages from bank or course platform |
+| Filter out | Newsletters, ads, social media notifications, order confirmations, parcel and mail delivery, expired verification codes, job alerts |
+| Keep | Security alerts, bills and invoices, messages from bank or course platform, personal messages from recruiters |
 | Priority | High: action, reply or deadline. Medium: relevant, no direct action. Low: informational |
-| Output | Table sorted by priority, newest first within a priority. Bills always show amount and due date. Codes and passwords are never repeated |
-| Vacancies | IT and network vacancies from job alerts and recruiters go into a separate table, each rated Good / Partial / No fit against a personal profile, with follow-up questions when information is missing |
-
-## Personal profile
-
-The vacancy rating needs a personal profile (location, travel distance, education, certificates, experience, desired level, salary). It is left empty in this public version: fill in the **Profiel van de gebruiker** section in `SKILL.md` yourself.
+| Output | Table sorted by priority, newest first within a priority. Bills always show amount and due date. Codes and passwords are never repeated. Filtered job alerts are counted, with a pointer to [`vacatures-checken`](../vacatures-checken/) |
 
 ## When it activates
 
